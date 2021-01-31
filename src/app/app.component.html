@@ -1,0 +1,11 @@
+<div class="container">
+  <h3>Enter some string</h3>
+  <div class="form-group">
+    <label for="string_input">String: </label>
+    <input [(ngModel)]="inputString" class="form-control" type="text" id="string_input" placeholder="start typing..." />
+  </div>
+
+  <app-lenght [inputString]="inputString"></app-lenght>
+  <app-char-at [inputString]="inputString"></app-char-at>
+  <app-concat [outputString]="inputString"></app-concat>
+</div>

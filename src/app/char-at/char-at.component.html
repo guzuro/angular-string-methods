@@ -1,0 +1,9 @@
+<h4>.charAt(index) method</h4>
+<div class="form-group">
+  <label for="index_input">Enter index: </label>
+  <input [(ngModel)]="index" class="form-control" type="text" id="index_input" placeholder="start typing..." />
+</div>
+
+<p *ngIf="index>=0 && inputString">
+  There is symbol <b>' {{charByIndex}} '</b> by index {{index}}
+</p>
