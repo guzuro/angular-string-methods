@@ -6,19 +6,17 @@ selector: 'app-lenght',
 templateUrl: './lenght.component.html',
 styleUrls: ['./lenght.component.css']
 })
-export class LenghtComponent implements OnInit {
+export class LenghtComponent {
 
-@Input() inputString: string = "";
-constructor() { }
+  @Input() inputString: string = "";
+  constructor() { }
 
-ngOnInit(): void {
-}
+  get stringLengthSpaces():number{
+    return this.inputString.length
+  }
 
-get stringLengthSpaces():number{
-  return this.inputString.length
-}
-get stringLengthClear():number{
-  return this.inputString.replace(/ /g, "").length
-}
+  get stringLengthClear():number{
+    return this.inputString.replace(/ /g, "").length
+  }
 
 }

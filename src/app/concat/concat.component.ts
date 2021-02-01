@@ -6,24 +6,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './concat.component.html',
   styleUrls: ['./concat.component.css']
 })
-export class ConcatComponent implements OnInit {
-  
-  _outputString:string = " ";
-  
-  @Input()
-  set outputString(inputString: string){
-    this._outputString = inputString.concat(this.concat_string);
-  }
-
-  get outputString():string{
-    return this._outputString;
-  }
+export class ConcatComponent {
   
   concat_string:string = "";
+  @Input() inputString: string = ""
+  
   constructor() { }
 
-  ngOnInit(): void {
+  get outputString():string{
+    return this.inputString.concat(this.concat_string);
   }
-
-
 }

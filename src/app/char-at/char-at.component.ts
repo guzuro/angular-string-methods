@@ -6,18 +6,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './char-at.component.html',
   styleUrls: ['./char-at.component.css']
 })
-export class CharAtComponent implements OnInit {
+export class CharAtComponent {
   @Input() inputString: string = "";
   index:number = 0;
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
   get charByIndex():string{
     return this.inputString.charAt(this.index);
   }
-
-
 
 }

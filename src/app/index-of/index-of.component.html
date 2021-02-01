@@ -1,0 +1,16 @@
+<div class="content">
+
+  <h4>.indexOf(term, index) method</h4>
+  <div class="form-group">
+    <label for="concat_input">Type term</label>
+    <input [(ngModel)]="term" type="text" class="form-control" id="concat_input">
+  </div>
+  <div class="form-group">
+    <label for="concat_input">Enter index</label>
+    <input [(ngModel)]="index" type="text" class="form-control" id="index_input">
+  </div>
+
+  <p *ngIf="outputString>=0">
+    Result: {{outputString}}
+  </p>
+</div>

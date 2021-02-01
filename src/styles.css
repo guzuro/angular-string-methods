@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+.content{
+    border: 1px black solid;
+    margin: 0px 0px 15px 0px;
+    padding: 10px;
+}
